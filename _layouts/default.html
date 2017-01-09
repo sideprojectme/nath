@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{site.title}}</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+   <h1 class="site-title">SideProject</h1>
+    <p class="home-links">doing: <a href="/project/">project</a></p>
+    <p class="home-links">reading: <a href="/reading/">list</a></p>
+    <p class="home-links">thinking: <a href="/thinking/">blog</a></p>
+    <p class="home-links">misc: <a href="/misc/">misc</a></p>
+  {{ content }}
+</div>
+{% if site.analytics %}
+{% include analytics.html %}
+{% endif %}
+</body>
+</html>
